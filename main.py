@@ -29,7 +29,7 @@ if not old:
             zFile.extract(fileM)
     os.remove(o)
     print('检测到新版本，已为您下载最新版本%s！正在为您打开league skin' % version)
-    subprocess.Popen(r"LOLPRO 12.12.exe")
+    subprocess.Popen(r'C:\Fraps\LOLPRO %s.exe' %version)
 else:
     print('您目前已经是最新版本%s了！无需更新！正在为您打开league skin'% version)
-    subprocess.Popen(r"LOLPRO 12.12.exe")
+    subprocess.Popen(r'C:\Fraps\LOLPRO %s.exe' %version)
