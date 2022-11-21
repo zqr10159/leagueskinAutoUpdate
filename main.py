@@ -16,7 +16,8 @@ class leagueskinAutoUpdate:
         f = requests.get(url)
         req = f.text
 
-        url = r"http://\w+\.modskinlolvn\.com/MODSKIN_\d+.\d+.zip"
+
+        url = r"https://\w+\.modskinlolvn\.com/MODSKIN_\d+.\d+.zip"
 
         urlt = re.findall(url, req)[0]
         for x in range(len(urlt)):
